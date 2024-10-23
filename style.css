@@ -1,0 +1,544 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+/* <!-- Hero Section  Start--> */
+
+
+  
+  
+  /* <!--------------- ///////////////////HEADER LOGO NAV BOOK TABLE START /////////////////// ------------------> */ 
+
+
+.header-nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.logo{
+    width: 48px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: -webkit-xxx-large;
+    font-family: 'FontAwesome';
+    margin: 10px;
+    background-color: #000000;}
+
+.nav-bar-box{
+    width:70.3%;
+    height: 122px;
+    padding: 1px ;   
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-box>a{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+}
+.nav-bar-box>a:hover{
+     color: #000000;
+    padding: .7rem;
+    border-bottom:1px solid #c39a8b ;
+    transition: .2S;
+}
+.mobile-icon{
+    width: 250px;
+    height: 100px;
+    background-color: aqua;
+}
+.mobile-icon i{
+    color: #000000;
+    font-size: 55px;
+}
+.mobile-nav{
+    width:10.3%;
+    height: 122px;
+    display: none;
+}
+.mobil-menu-bar{
+    margin-right: 28px;
+    display: none;
+ }
+ #mobil-menu-bar{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 50vh;
+    width: 300px;
+    z-index: 999;
+    backdrop-filter: blur(15px);
+    box-shadow: 1px -2px 10px 2px #3d3d3d;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#mobil-menu-bar>a{
+    margin: 10px;
+    width: 92%;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.mobil-menu-bar>i{
+    font-size: 30px;
+    color: white;
+}
+.fa-solid{
+   font-size:  25px;
+}
+.booking-hall>a{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(46, 118, 201);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px 0px 25px 0px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.booking-hall>a:hover{
+    background-color: #000000;
+    color: white;
+    border-radius: 25px;
+}
+ @media only screen and (max-width : 1060px) {
+    .nav-bar-box>a{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width : 710px) {
+    .nav-bar-box>a{
+         display: none;
+    }
+    .header-nav{
+        height: 40px;
+    }
+    .mobile-nav{
+        display: block;
+        width: 10.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .booking-hall>a{
+        margin-right: 20px;
+    }
+
+    
+    } 
+/* <!---------------/////////////////// HEADER LOGO NAV BOOK TABLE END/////////////////// ------------------> */
+
+/* <!-- Hero Section  Start--> */
+
+#hero {
+    position: relative;
+    width: 100%;
+}
+
+.first-image {
+    width: 100%;
+    height: 600px;
+}
+
+.first-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight overlay for better text visibility */
+}
+
+.content {
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+/* Responsiveness */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+    .first-image {
+        height: 600px;
+    }
+
+    .content {
+        margin-top: 200px;
+    }
+}
+
+/* For smaller screens like mobile devices */
+@media (max-width: 767px) {
+    .first-image {
+        height: 600px;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+}
+/* <!-- Hero Section  Start End--> */
+ 
+/* <!-- Services Section Start--> */
+/* 
+
+
+
+/* General styles */
+.services-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: rgb(245, 221, 36);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive styles */
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 992px) {
+    .service-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .service-card p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-section {
+        padding: 0 15px;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 767px) {
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* <!-- Services Section End--> */
+
+
+/* <!-- INTERIOR DESIGN SECTION START --> */
+
+
+
+
+
+/* <!-- INTERIOR DESIGN SECTION END --> */
+
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+}
+
+
+
+.interior-img-txt{
+    margin-top: 20px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    
+}
+.img-fluid> img{
+    margin-top: 172px;
+}
+
+ @media (max-width: 992px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 150px;
+    }
+    .box{
+        margin-top: -47px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        margin-top: 157px;
+    }
+    .content >img{
+
+        margin-top: 150px;
+    }
+    .blog-img>img{
+        margin-top: -17px;
+    }
+    /* .img-fluid>img {
+        margin-top: 157px;
+    } */
+} 
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .box{
+        margin-top: -45px;
+    }
+    .blog-img>img{
+        margin-top: -17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Form Styling */
+/* #contactForm {
+    max-width: 600px;
+}
+
+#responseMessage {
+    font-size: 1.2rem;
+} */
+
+@media (max-width: 992px) {
+    /* For tablets and smaller laptops */
+    .form-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
+
+/* <!-- Testimonials section start --> */
+
+ /* General styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blog-img {
+    display: flex;
+    justify-content: center;
+}
+
+.img-testimonials {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.testimonials-content {
+    padding: 20px;
+    color: black;
+}
+
+/* Responsive styles */
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 992px) {
+    .testimonials {
+        flex-direction: row;
+    }
+
+    .testimonials-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .testimonials-content p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials-content h1 {
+        font-size: 2rem;
+    }
+
+    .testimonials-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .blog-img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 767px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials-content h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .testimonials-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .blog-img img {
+        max-width: 90%;
+    }
+}
+
+/* <!-- Testimonials section end --> */
+
