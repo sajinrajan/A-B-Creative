@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construction Building Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
  <!-- HEADER LOGO NAV BOOK TABLE START -->
+ 
  <section class="main-image">
     <div class="header-nav"> 
-    <div class="logo"><img src="" width="70px" height="70px" alt="" ></div>
+        <div class="logo">
+            <img src="logo.png" width="70px" height="70px" alt="Logo">
+        </div>
         <div class="nav-bar-box">
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -20,13 +30,11 @@
             <a href="#">Work</a>
             <a href="#">Contact</a>
         </div>
-      
-        <!-- <div class="mobile-icon"><i class="fa-solid fa-bars"></i></div> -->
-       <div class="mobile-nav">
+        <div class="mobile-nav">
             <div class="mobil-responsive-box">
                 <i class="fa-solid fa-bars" id="menu-icon" onclick="openMenuBar()"></i>
-                <div id="mobil-menu-bar" > 
-                    <i class="fa-solid fa-xmark" onclick=" closeMenuBar()"></i>
+                <div id="mobil-menu-bar"> 
+                    <i class="fa-solid fa-xmark" onclick="closeMenuBar()"></i>
                     <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Service</a>
@@ -36,7 +44,7 @@
             </div>
         </div>
     </div>    
- </section>
+</section>  
 <!--------------HEADER LOGO NAV BOOK TABLE END ------------------>
 
     <!-- Hero Section  Start-->
@@ -44,7 +52,7 @@
 
     <section id="hero" class="header-box">
         <div class="main-box">
-            <div class="first-image">
+            <div class="first-image" >
                 <img src="./image/contemporary-house-high-quality-exterior-scene-lumion-8-3d-model-low-poly-skp-ls8.jpg" alt="">
             </div>    
             <div class="overlay">
@@ -105,59 +113,64 @@
     <!-- Services Section End-->
 
     <!-- SERVICES SECTION START -->
-        <!-- <section>
-                <div class="container services-section">
-                    <h2 class="mb-5" style="font-size: 30px; font-weight: 600;">Our Services</h2>
-                    <div class="row">
-                        <div class=" col-lg-4 col-md-6 col-sm-12" >
-                            <div class="card h-100" style="background-color: rgb(245, 221, 36);">
-                                <h3>Architecture Portfolio</h3>
-                                <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                            </div>
-                        </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100" style="background-color: rgb(245, 221, 36);">
-                                <h3>Planning Process</h3>
-                                <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                            </div>
-                        </div>
-                        <div class=" col-lg-4 col-md-6 col-sm-12">
-                            <div class="card h-100" style="background-color: rgb(245, 221, 36);">
-                                <h3>Unique Design</h3>
-                                <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section> -->
-
         <section>
-            <div class="container services-section">
-                <h2 class="mb-5">Our Services</h2>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="card h-100 service-card">
-                            <h3>Architecture Portfolio</h3>
-                            <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="card h-100 service-card">
-                            <h3>Planning Process</h3>
-                            <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                        <div class="card h-100 service-card">
-                            <h3>Unique Design</h3>
-                            <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
-                        </div>
-                    </div>
+    <div class="container services-section">
+        <h2 class="mb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 service-card">
+                    <h3>Architecture Portfolio</h3>
+                    <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
                 </div>
             </div>
-        </section>
-        
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 service-card">
+                    <h3>Planning Process</h3>
+                    <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card h-100 service-card">
+                    <h3>Unique Design</h3>
+                    <p>Lectus molestie id enim ipsum. Netus sed cursus nibh iaculis ipsum turpis nulla blandit dui</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- SERVICES SECTION END -->
+
+<!-- /* First slider section start */ -->
+
+    <section class="slider-section">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./image/24199e4e9dd3ccbeaff2b8274029a78e.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/25544f2bdfda0df770761323ebd8000f.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/4764077709c45f995932c2f0ebfc29b7.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/77413c1aab27d558136710a8cd13374b.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/94dcf1bbe721c3977df177a99f66d6bd.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/af01bddb705257d6babb1df1605c1035.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./image/b84f50ad2d812f4a3634e520740d1370.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- /* First slider section end */ -->
+
 
   <!-- INTERIOR DESIGN SECTION START -->
   <section>
@@ -186,6 +199,56 @@
 </section>
 
  <!-- INTERIOR DESIGN SECTION END -->
+
+    <!-- OUR CLIENTS SECTION START -->
+    <section >
+        <div class="inner-width">
+            <h1>our <strong>Clients</strong></h1>
+            <div class="services owl-carousel">
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reprehenderit.</div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reprehenderit.</div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reprehenderit.</div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reprehenderit.</div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, reprehenderit.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR CLIENTS SECTION END -->
 
     <!-- Contact Section Start -->
   
@@ -249,6 +312,35 @@
     
     <!-- Testimonials section end -->
    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
     <!-- Bootstrap and JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
